@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="image/icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="container-nav">
+        <div class="left">
+            <ul>
+                <a href="profile.html"><img src="image/logo.png" alt="logo HD" class="logo"></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="addproject.html">My Project</a></li>
+                <li><a href="testimonial.html">My Testimonial</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button>
+                <a href="contact.html">Contact Me</a>
+            </button>
+            <button onclick="toggle()" class="icon-ham">
+                <i class="fa-solid fa-bars fa-3x"></i>
+            </button>
+        </div>
+    </nav>
+    <div id="button-ham">
+        <li><a href="index.html" class="hover">Home</a></li>
+        <li><a href="addproject.html" class="hover">My Project</a></li>
+        <li><a href="testimonial.html" class="hover">My Testimonial</a></li>
+        <li><a href="contact.html" class="button-cont">Contact Me</a></li>
+    </div>
+    <div class="container">
+        <h1 class="title">Get In Touch</h1>
+        <form id="form" autocomplete="off">
+            <div>
+                <label for="inputName">Name</label>
+                <input id="inputName" type="text" placeholder="Your Name" required>
+            </div>
+            <div>
+                <label for="inputEmail">Email</label>
+                <input id="inputEmail" type="email" placeholder="Your Email" required>
+            </div>
+            <div>
+                <label for="inputNumber">Phone Number</label>
+                <input id="inputNumber" type="tel" placeholder="Your Number" pattern="(\+62|62|0)8[1-9][0-9]{7,11}$" required>
+            </div>
+            <div>
+                <label for="inputSelect">Subject</label>
+                <select id="inputSelect" required>
+                    <option value="" hidden>Your Position</option>
+                    <option value="Full Stack Developer">Full Stack Developer</option>
+                    <option value="Front End Developer">Front End Developer</option>
+                    <option value="Back End Developer">Back End Developer</option>
+                </select>
+            </div>
+            <div>
+                <label for="inputMassage">Your Massage</label>
+                <textarea id="inputMassage" placeholder="Your Massage" required></textarea>
+            </div>
+            <div>
+                <button type="button" onclick="getData()">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="js/contact.js"></script>
+<script src="js/nav.js"></script>
+</html>

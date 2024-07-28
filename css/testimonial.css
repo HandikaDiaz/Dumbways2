@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: rgb(234, 234, 234);
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+.container {
+    margin: 50px auto;
+    padding-bottom: 45px;
+    width: 35%; 
+    display: block;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px gray;  
+}
+
+form label {
+    margin-bottom: 15px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px gray;
+}
+
+form textarea {
+    padding-bottom: 70px;
+    resize: vertical;
+}
+
+/* Checkbox */
+.flex-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.flex-box i {
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    transition: color 0.5s ease;
+}
+
+.flex-box i.active{
+    cursor: pointer;
+    font-size: 30px;
+    color: black;
+    transition: 0.5s;
+}
+
+/* Uploud Image */
+form .uploud-image {
+    margin-top: 30px;
+}
+
+form .group-uploud {
+    width: 100%;
+    
+}
+
+form .flex-uploud {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+form .flex-uploud img {
+    margin: auto 20px;
+    width: 6%; 
+    height: 6%;
+    cursor: pointer;
+}
+
+form .flex-uploud p {
+    margin: auto 0;
+    padding: 8px 25px;
+    background-color: rgb(212, 212, 212);
+    border-radius: 5px;
+    font-weight: normal;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+}
+
+/* Submit Button */
+form button {
+    float: right;
+    margin-top: 15px;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+form button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+form button:active{
+    padding: 11px 28px;
+    border-radius: 15px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+}
+
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.rating-title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.rating-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rating-box button {
+    margin: auto 10px;
+    padding: 5px 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.rating-box button:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.rating-box button:active {
+    padding: 11px 28px;
+    font-size: 12px;
+    background-color: rgb(234, 234, 234);
+    color: white;
+}
+
+.rating-box .active {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.section-card {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 25%;
+    max-height: 50%;
+    margin: 50px 30px;
+    padding-bottom: 50px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(162, 161, 161);
+}
+
+.card img {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+    box-shadow: 1px 1px 10px rgb(162, 161, 161);
+}
+
+.card .quotes {
+    margin: 30px;
+    text-align: justify;
+}
+
+.card .author {
+    margin: 30px;
+    text-align: end;
+}
+
+.card .star {
+    margin: -20px 30px;
+    text-align: end;
+}
+
+@media only screen and (max-width: 800px) {
+    .card .quotes {
+        font-size: 10px;
+    }
+
+    .card .author {
+        font-size: 10px;
+    }
+
+    .card .star {
+        font-size: 10px;
+    }   
+}
+
+@media only screen and (max-width: 500px) {
+    .rating-box button {
+        margin-bottom: 20px;
+    }
+}

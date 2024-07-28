@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/testimonial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="container-nav">
+        <div class="left">
+            <ul>
+                <a href="profile.html"><img src="image/logo.png" alt="logo HD" class="logo"></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="addproject.html">My Project</a></li>
+                <li><a href="testimonial.html" id="active">My Testimonial</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button>
+                <a href="contact.html">Contact Me</a>
+            </button>
+            <button onclick="toggle()" class="icon-ham">
+                <i class="fa-solid fa-bars fa-3x"></i>
+            </button>
+        </div>
+    </nav>
+    <div id="button-ham">
+        <li><a href="index.html" class="hover">Home</a></li>
+        <li><a href="addproject.html" class="hover">My Project</a></li>
+        <li><a href="testimonial.html" class="hover" id="active">My Testimonial</a></li>
+        <li><a href="contact.html" class="button-cont">Contact Me</a></li>
+    </div>
+
+    <!-- <div class="container">
+        <h1 class="title">Add Testimonial</h1>
+        <form action="" id="form" autocomplete="off">
+            <div>
+                <label for="inputName">Your Name</label>
+                <input type="text" id="inputName" placeholder="Your Name" required>
+            </div>
+            <div>
+                <label for="inputQuote">Your Testi</label>
+                <textarea id="inputQuote" placeholder="Your Testi" required></textarea>
+            </div>
+            <div>
+                <label for="">Rating</label>
+                <div class="flex-box" id="rating-box">
+                    <i class="fa-regular fa-star fa-beat" data-value="1"></i>
+                    <i class="fa-regular fa-star fa-beat" data-value="2"></i>
+                    <i class="fa-regular fa-star fa-beat" data-value="3"></i>
+                    <i class="fa-regular fa-star fa-beat" data-value="4"></i>
+                    <i class="fa-regular fa-star fa-beat" data-value="5"></i>
+                </div>
+            </div>
+            <div class="uploud-image">
+                <label>Upload Image</label>
+                <div class="group-uploud">
+                    <label for="inputImage" class="flex-uploud">
+                        <p>Choose</p>
+                        <img src="image/attach.png" alt="file">
+                    </label>
+                    <input type="file" id="inputImage" hidden required>
+                </div>
+            </div>
+            <div>
+                <button type="button" onclick="cardTestimonial(event)">Submit</button>
+            </div>
+        </form>
+    </div> -->
+    <div style="background-color: rgb(234, 234, 234)ite; padding-top: 1px;">
+        <h1 class="title">My Testimonial</h1>
+        <h2 class="rating-title">Rating By Star</h2>
+        <div class="rating-box">
+            <button onclick="allTestimonial()" style="padding: 5px 20px;">All</button>
+            <button onclick="testimonialFilter(1)">1 <i class="fa-regular fa-star fa-beat-fade"></i></button>
+            <button onclick="testimonialFilter(2)">2 <i class="fa-regular fa-star fa-beat-fade"></i></button>
+            <button onclick="testimonialFilter(3)">3 <i class="fa-regular fa-star fa-beat-fade"></i></button>
+            <button onclick="testimonialFilter(4)">4 <i class="fa-regular fa-star fa-beat-fade"></i></button>
+            <button onclick="testimonialFilter(5)">5 <i class="fa-regular fa-star fa-beat-fade"></i></button>
+        </div>
+        <section class="section-card" id="section-card">
+    </div>
+        
+    </section>
+    <script src="js/nav.js"></script>
+    <script src="js/testimonial.js" defer></script>
+</body>
+</html>

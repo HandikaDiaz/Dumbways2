@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="icon" href="image/icon.jpg">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <nav class="container-nav">
+            <div class="left">
+                <ul>
+                    <a href="profile.html"><img src="image/logo.png" alt="logo HD" class="logo"></a>
+                    <li><a href="index.html" id="active">Home</a></li>
+                    <li><a href="addproject.html">My Project</a></li>
+                    <li><a href="testimonial.html">My Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <button>
+                    <a href="contact.html">Contact Me</a>
+                </button>
+                <button onclick="toggle()" class="icon-ham">
+                    <i class="fa-solid fa-bars fa-3x"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="button-ham">
+            <li><a href="index.html" class="hover" id="active">Home</a></li>
+            <li><a href="addproject.html" class="hover">My Project</a></li>
+            <li><a href="testimonial.html" class="hover">My Testimonial</a></li>
+            <li><a href="contact.html" class="button-cont">Contact Me</a></li>
+        </div>
+        <div class="flex-container">
+            <div>
+                <h1 class="title">Hi Welcome to My Hut</h1>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi ut voluptates, exercitationem praesentium, natus quo inventore odio magni odit cupiditate quaerat possimus laboriosam, eligendi labore earum in vitae! Velit, impedit!
+                </p>
+                <div class="flex-cc">
+                    <a href="contact.html" class="contact-card">Contact</a>
+                    <a href="" class="dw-cv">
+                        <p class="text-cv">
+                            Download CV 
+                            <ion-icon name="code-download-outline" class="icon-cv"></ion-icon>
+                        </p>
+                    </a>    
+                </div>
+                <div class="social-media">
+                    <a href="#"><img src="image/in.png" alt="" class="linkedin"></a>
+                    <a href="#"><img src="image/ig.png" alt="" class="ig"></a>
+                    <a href="#"><img src="image/fb.png" alt="" class="fb"></a>
+                    <a href="#"><img src="image/twt.png" alt="" class="twt"></a>
+                </div>
+            </div>
+            <div class="img-card">
+                <img 
+                    src="image/profile.jpg" 
+                    alt="My Profile"
+                    class="my-img">
+                <h2 class="name-img">Handika Alexandria Diaz</h2>
+                <p class="info-img">Fullstack Developer</p>
+            </div>    
+        </div>
+    </body>
+    <script src="js/nav.js"></script>
+</html>

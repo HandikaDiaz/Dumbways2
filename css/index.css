@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: rgb(234, 234, 234);
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+.flex-container {
+    background-color: white;
+    margin: 50px auto; 
+    border: 1px white solid; 
+    border-radius: 10px; 
+    width: 75%; 
+    box-shadow: 0 0 10px gray;
+    display: flex;
+}
+
+.title {
+    width: 80%; 
+    margin: 70px auto 20px auto;
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+.text {
+    width: 80%; 
+    margin: 20px auto; 
+    font-size: 20px;
+    text-align: justify;
+}
+
+.flex-cc {
+    display: flex;
+    align-items: center;
+}
+
+.contact-card {
+    width: 12%;
+    text-align: center;
+    margin: 50px 30px 50px 65px;
+    display: block;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 7px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.contact-card:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.dw-cv {
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s, font-weight 0.3s, font-size 0.3s;
+}
+
+.dw-cv:hover {
+    color: rgb(203, 203, 203);
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+.text-cv {
+    width: 100%;  
+    align-items: center; 
+    display: flex;
+    font-size: 20px;
+}
+
+.icon-cv {
+    font-size: 30px; 
+    margin-left: 10px;
+}
+
+.social-media {
+    width: 85%; 
+    margin: auto; 
+    align-items: center; 
+    display:flex;
+}
+
+.linkedin {
+    width: 90px;
+}
+
+.linkedin:hover {
+    width: 80px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.ig {
+    width: 65px; 
+    margin-right: 10px;
+}
+
+.ig:hover {
+    width: 55px; 
+}
+
+.fb {
+    width: 60px; 
+    margin-right: 20px;
+}
+
+.fb:hover {
+    width: 50px; 
+}
+
+.twt {
+    width: 50px;
+}
+
+.twt:hover {
+    width: 40px;
+}
+
+.img-card {
+    background-color: white; 
+    width: 100%; 
+    margin: 50px 50px 50px 0; 
+    box-shadow: 5px 5px 20px gray; 
+    border-radius: 10px;
+}
+
+.my-img {
+    width: 100%; 
+    border-radius: 10px 10px 0 0;
+}
+
+.name-img {
+    width: 100%; 
+    margin: auto; 
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+.info-img {
+    width: 50%; 
+    margin: 5px auto; 
+    padding: 0 0 20px 0;
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.icon-ham {
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 15px;
+    }
+
+    .social-media {
+        margin: auto; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .flex-cc {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-card {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        padding: 10px 25px;
+        text-decoration: none;
+        font-size: 15px;
+        transition: background-color 0.5s, color 0.5s;
+    }
+
+    .text-cv {
+        font-size: 15px;
+    }
+
+    .img-card {
+        background-color: white; 
+        width: 80%; 
+        margin: 60px auto; 
+        display: block;
+        box-shadow: 5px 5px 20px gray; 
+        border-radius: 10px;
+    }
+    
+    .my-img {
+        width: 100%; 
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .flex-cc {
+        flex-direction: column;
+    }
+
+    .contact-card {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        margin-left: 25px;
+        padding: 10px 100px;
+        text-decoration: none;
+        font-size: 20px;
+        transition: background-color 0.5s, color 0.5s;
+    }
+}

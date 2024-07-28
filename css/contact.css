@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    background-color: rgb(234, 234, 234);
+    margin-bottom: 100px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+.container {
+    margin: 50px auto;
+    width: 35%;
+    display: block;
+}
+
+.title {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px gray;  
+}
+
+form label {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px gray;
+}
+
+form select {
+    cursor: pointer;
+}
+
+form textarea {
+    padding-bottom: 70px;
+    resize: vertical;
+}
+
+form button {
+    float: right;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+
+}
+
+form button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+form button:active {
+    padding: 11px 28px;
+    border-radius: 15px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 70%;
+        margin: auto;
+    }
+}

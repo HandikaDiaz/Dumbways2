@@ -1,0 +1,94 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="icon" href="image/icon.jpg">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/addproject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="container-nav">
+        <div class="left">
+            <ul>
+                <a href="profile.html"><img src="image/logo.png" alt="logo HD" class="logo"></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="addproject.html" id="active">My Project</a></li>
+                <li><a href="testimonial.html">My Testimonial</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button>
+                <a href="contact.html">Contact Me</a>
+            </button>
+            <button onclick="toggle()" class="icon-ham">
+                <i class="fa-solid fa-bars fa-3x"></i>
+            </button>
+        </div>
+    </nav>
+    <div id="button-ham">
+        <li><a href="index.html" class="hover">Home</a></li>
+        <li><a href="addproject.html" class="hover" id="active">My Project</a></li>
+        <li><a href="testimonial.html" class="hover">My Testimonial</a></li>
+        <li><a href="contact.html" class="button-cont">Contact Me</a></li>
+    </div>
+    <div class="container">
+        <h1 class="title">Add My Project</h1>
+        <form action="" id="form" autocomplete="off">
+            <div>
+                <label for="inputProject">Project Name</label>
+                <input type="text" id="inputProject" placeholder="Your Project Name" required>
+            </div>
+            <div class="flex-date">
+                <div class="box-start">
+                    <label for="inputStartDate">Start Date</label>
+                    <input type="date" id="inputStartDate" required>
+                </div>
+                <div class="box-end">
+                    <label for="inputEndDate">End Date</label>
+                    <input type="date" id="inputEndDate" required>
+                </div>
+            </div>
+            <div>
+                <label for="inputDescription">Description</label>
+                <textarea id="inputDescription" placeholder="Your Project Description" required></textarea>
+            </div>
+            <div>
+                <label for="">Technologies</label>
+                <div class="flex-check">
+                    <div class="flex-box">
+                        <label for="swift"><input type="checkbox" id="swift">Swift</label>
+                        <label for="ruby"><input type="checkbox" id="ruby">Ruby</label>
+                    </div>
+                    <div class="flex-box">
+                        <label for="phyton"><input type="checkbox" id="phyton">Phyton</label>
+                        <label for="javascript"><input type="checkbox" id="javascript">Javascript</label>
+                    </div>
+                </div>
+            </div>
+            <div class="uploud-image">
+                <label>Upload Image</label>
+                <div class="group-uploud">
+                    <label for="inputImage" class="flex-uploud">
+                        <p>Choose</p>
+                        <img src="image/attach.png" alt="file">
+                    </label>
+                    <input type="file" id="inputImage" hidden required>
+                </div>
+            </div>
+            <div>
+                <button type="button" onclick="addProject(event)">Submit</button>
+            </div>
+        </form>
+    </div>
+    <h1 class="new-title">My Project</h1>
+    <div class="new-page" id="new-page">
+        
+    </div>
+    
+</body>
+<script src="js/addproject.js"></script>
+<script src="js/nav.js"></script>
+</html>
